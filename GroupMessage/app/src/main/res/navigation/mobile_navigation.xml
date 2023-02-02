@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_creategroup"
+        android:name="com.example.groupmessage.ui.creategroup.CreateGroupFragment"
+        android:label="Grup Oluştur"
+        tools:layout="@layout/activity_create_group_fragment" />
+
+    <fragment
+        android:id="@+id/nav_addtogroup"
+        android:name="com.example.groupmessage.ui.addtogroup.AddToGroupFragment"
+        android:label="Gruba Üye Ekle"
+        tools:layout="@layout/activity_add_to_group_fragment" />
+    <fragment
+        android:id="@+id/nav_createmessage"
+        android:name="com.example.groupmessage.ui.createmessage.CreateMessageFragment"
+        android:label="Mesaj Oluştur"
+        tools:layout="@layout/activity_send_message_fragment" />
+    <fragment
+        android:id="@+id/nav_sendmessage"
+        android:name="com.example.groupmessage.ui.sendmessage.SendMessageFragment"
+        android:label="Mesaj Gönder"
+        tools:layout="@layout/activity_send_message_fragment" />
+
+</navigation>
